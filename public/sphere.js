@@ -3,11 +3,35 @@ $(function() {
     window.ctx = d_canvas.getContext('2d');
     
     // Attaching slider event
-    $(".slider").slider({
+    $(".roll").slider({
         range: "min",
-        value: 20,
-        min: 0,
-        max: 360,
+        value: 180,
+        min: 180 - 45,
+        max: 180 + 45,
+        slide: function (event, ui) {
+            var index = Number($(this).data('index'));
+            rotate_a[index] = ui.value;
+            drawAxisCircles();
+        }
+    });
+    // Attaching slider event
+    $(".yaw").slider({
+        range: "min",
+        value: 180,
+        min: 180 - 80,
+        max: 180 + 80,
+        slide: function (event, ui) {
+            var index = Number($(this).data('index'));
+            rotate_a[index] = ui.value;
+            drawAxisCircles();
+        }
+    });
+    // Attaching slider event
+    $(".pitch").slider({
+        range: "min",
+        value: 180,
+        min: 180 - 50,
+        max: 180 + 50,
         slide: function (event, ui) {
             var index = Number($(this).data('index'));
             rotate_a[index] = ui.value;
