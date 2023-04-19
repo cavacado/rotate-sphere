@@ -28,3 +28,8 @@ credit: Permission: Dr. Joe Muscolino. www.learnmuscles.com
 ![rom-skull](./assets/rom-neck.jpg)
 
 https://learnmuscles.com/glossary/cervical-spine-ranges-of-motion-rom/
+
+## TODOs:
+- [ ] deprecate jquery ui to use some lib that smooth sliding on both mobile and desktop
+- [ ] katexify the formulas provided in the medium article
+- [ ] add orientation markers in the canvas to indicate which direction one is facing
