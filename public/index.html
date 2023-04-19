@@ -10,22 +10,26 @@
                 width: 400px;
                 margin-bottom: 10px;
             }
+            .body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         </style>
     </head>
 
     <body>
         <div>
-            roll: <div class="roll" data-index="0"></div>
+            roll: <div class="slider roll" data-index="0"></div>
         </div>
         <div>
-            yaw: <div class="yaw" data-index="1"></div>
+            yaw: <div class="slider yaw" data-index="1"></div>
         </div>
         <div>
-            pitch: <div class="pitch" data-index="2"></div> 
+            pitch: <div class="slider pitch" data-index="2"></div> 
         </div>
         <canvas id="canvas" width="420" height="420"></canvas>
         <p>Sliders represent spheres rotation on x, y and z axis respectively. You can try different combinations.</p>
-        <p>Refik Turkeli</p>
         <script src="sphere.js"></script>
     </body>
 </html>

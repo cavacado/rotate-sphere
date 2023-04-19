@@ -46,7 +46,7 @@ var d_canvas = document.getElementById('canvas');
 var ctx = d_canvas.getContext('2d');
 increase_by = 0.4;
 r = 200; // radius
-rotate_a = [20, 20, 20]; // rotation angles
+rotate_a = [180, 180, 180]; // rotation angles
 
 function drawPoint(coor) {
     // If the points z coordinate is less than
